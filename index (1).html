@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Responsiv Resturant UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mini-navBar">
+            <div>
+                <button id="menu">
+                    <span onclick="showMenu()">☰</span>
+                    <span onclick="hideMenu()">×</span>
+                    Menu
+                </button>
+            </div>
+        </div>
+        <div class="navBar" id="navbar">
+            <div>
+                <p>TACOS</p>
+            </div>
+            <div>
+                <p>BEERS</p>
+            </div>
+            <div>
+                <p>WINES</p>
+            </div>
+            <div>
+                <p>DESSERTS</p>
+            </div>
+            <div>
+                <p>RESERVATIONS</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="catalog">
+                <h1>Terry's Taco Joint</h1>
+                <br>
+                <p>Pretty Good Tacos!</p>
+            </div>
+            <div class="price1">
+                <p class>$1.99</p>
+                <p>Tacos</p>
+            </div>
+            <div class="price2">
+                <p>$3.99</p>
+                <p>Kombucha</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-list">
+                <span>🌮</span>
+                <h4>Tacos</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. diam in! </p>
+            </div>
+            <div class="menu-list">
+                <span>🍺</span>
+                <h4>Beer</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. diam in! </p>
+            </div>
+            <div class="menu-list">
+                <span>🍷</span>
+                <h4>Wine</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. diam in! </p>
+            </div>
+            <div class="menu-list">
+                <span>🎵</span>
+                <h4>Misic</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            
+        </div>
+        <div class="about">
+            <img src="C:\Users\Hi\Desktop\pro\img\queso-taco.png" alt="about-image">
+            <div>
+                <h2>Featured Taco</h2>
+                <p>Slim Profile, easy to hold and loaded with cheese.</p>
+                <p>This is the one you have been waiting for</p>
+                <button><a href="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/" target="_blank">Learn More →</a></button>
+            </div>
+            
+        </div>
+        <div class="divider">
+            <p>Instant Grams</p>
+        </div>
+        <div class="gallery">
+            <img src="C:\Users\Hi\Desktop\pro\img\1.jpg" alt="gallery-image">
+            <img src="C:\Users\Hi\Desktop\pro\img\2.jpg" alt="gallery-image">
+            <img src="C:\Users\Hi\Desktop\pro\img\3.jpg" alt="gallery-image">
+            <img src="C:\Users\Hi\Desktop\pro\img\4.jpg" alt="gallery-image">
+            <img src="C:\Users\Hi\Desktop\pro\img\5.jpg" alt="gallery-image">
+            <img src="C:\Users\Hi\Desktop\pro\img\6.jpg" alt="gallery-image">
+            <img src="C:\Users\Hi\Desktop\pro\img\7.jpg" alt="gallery-image">
+            <img src="C:\Users\Hi\Desktop\pro\img\8.jpg" alt="gallery-image">
+            <img src="C:\Users\Hi\Desktop\pro\img\9.jpg" alt="gallery-image">
+            <img src="C:\Users\Hi\Desktop\pro\img\10.jpg" alt="gallery-image">
+        </div>
+    </div>
+    <script>
+        function showMenu(){
+            const navBar = document.getElementById("navbar")
+            navBar.classList.add("showMenu");
+            const c = document.getElementById("menu").childNodes
+            c[3].style.display = "inline";
+            c[1].style.display = "none";
+        }
+
+        function hideMenu(){
+            const navBar = document.getElementById("navbar")
+            navBar.classList.remove("showMenu");
+            const c = document.getElementById("menu").childNodes
+            c[3].style.display = "none";
+            c[1].style.display = "inline";
+        }
+    </script>
+</body>
+</html>
